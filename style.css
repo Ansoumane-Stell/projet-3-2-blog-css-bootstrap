@@ -1,0 +1,210 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, nav-item, footer{
+    text-align: center;
+    color: white;
+}
+
+/* *************HEADER*************** */
+
+header{
+    background: url(./img-bio/cow1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
+}
+
+.collapse {
+    margin-left: 4%;
+}
+
+.nav-item a {
+    color: white;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+
+h1{
+    
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.578);
+    animation: titre ease 5s;
+}
+ 
+h2, h3, h4{
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.578);
+
+}
+
+@keyframes titre{
+    0%{
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* *************FIN DE HEADER*************** */
+
+
+
+/* *************PARTIE PRINCIPALE*************** */
+
+     /***************partie gauche ********/
+#leftpart{
+    background-color: rgba(165, 42, 42, 0.545);
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+
+.elements{
+    padding: 70px 0;
+}
+
+.elements img {
+    width: 200px;
+}
+
+.elements p {
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+
+.elements .button{
+    text-align: center;
+    margin: 15px 4% 0 0;
+}
+
+     /***************Fin partie gauche *****/
+
+
+
+
+     /***************partie droite********/
+#rightpart{
+    background-color: rgba(148, 67, 223, 0.659);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tips{
+    border-radius: 50% 50%;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+}
+
+.tips h4{
+  position: relative;
+  color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.tips:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.3s;
+
+}
+
+
+     /***************Fin partie droite*******/
+
+/* *************FIN DE LA PARTIE PRINCIPALE*************** */
+
+
+/* *************FOOTER*************** */
+footer{
+   
+    padding: 15px 0 4px 0;
+}
+
+/* *************FIN DE FOOTER************** */
+
+@media screen and (max-width: 990px) {
+    #rightpart{
+        display: flex;
+    }
+
+    #rightpart h2{
+        display: none;
+    }
+
+    .tips{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+
+@media screen and ( max-width: 770px ) {
+
+    h1{
+        font-size: 3em;
+    }
+
+    .elements{
+        padding: 30px 0;
+
+    }
+
+    .elements img{
+        max-width: 140px;
+        margin-top: 40px;
+    }
+
+    .tips {
+        height: 90px;
+        width: 90px;
+    }
+
+    .tips h4{
+        font-size: 0.90em;
+    }
+
+    
+}
+
+@media screen and ( max-width: 577px) {
+
+    
+
+    .elements{
+        padding: 15px 0;
+        text-align: center; 
+    }
+
+   
+    .elements img {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: none !important ;
+    }
+    
+}
